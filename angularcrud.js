@@ -31,6 +31,7 @@ app.controller('myctrl', function ($scope) {
         for (i in $scope.students) {
             if ($scope.students[i].id == id) {
                 $scope.newStudent = angular.copy($scope.students[i]);
+		console.log("made some changes);
             }
         }
     };
